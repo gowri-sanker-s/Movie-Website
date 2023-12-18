@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title{
+    margin-top: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.imgContainer{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+.subtypes{
+    margin-top: 1rem;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+.type,.rated{
+    border: 1px solid grey;
+    padding: 0.2rem 1rem;
+    margin: 0 0.6rem;
+    border-radius: 22px;
+
+}
+
+
+.plot{
+    text-align: center;
+    height: 4rem;
+    width:90%;
+    margin: auto;
+    padding-top: 4rem;
+}
+.main-container{
+    width: 60%;
+    margin: auto;
+    padding-bottom: 2rem;
+}
+.released{
+    margin-top: 6rem;
+}
+.language, .actors, .director, .released,.runtime{
+    border-bottom: 2px solid blue;
+    margin-left:12rem;
+    margin-right:12rem;
+    padding: 1rem;
+
+    display: flex;
+    justify-content: center;
+}
+.actors{
+    margin-bottom: 2rem;
+}
+.outer-ratingSites{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.ratingSitesImg{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+.ratingSitesImg img{
+    height: 2rem;
+}
