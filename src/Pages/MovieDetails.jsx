@@ -4,7 +4,7 @@ import axios from "axios";
 import '../css/movieDetails.css'
 const MovieDetails = () => {
   const imdbID = useParams();
-  console.log(imdbID.id);
+  console.log(imdbID.id); 
   const [movieDetails, setMovieDetails] = useState({});
   useEffect(() => { 
     axios

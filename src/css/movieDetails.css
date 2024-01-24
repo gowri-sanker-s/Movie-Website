@@ -38,6 +38,7 @@
     width:90%;
     margin: auto;
     padding-top: 4rem;
+    
 }
 .main-container{
     width: 60%;
@@ -47,6 +48,7 @@
 .released{
     margin-top: 6rem;
 }
+
 .language, .actors, .director, .released,.runtime{
     border-bottom: 2px solid blue;
     margin-left:12rem;
