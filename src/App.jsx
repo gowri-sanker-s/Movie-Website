@@ -14,7 +14,7 @@ function App() {
     e.preventDefault();
     axios
       .get(
-        `http://www.omdbapi.com/?i=tt3896198&apikey=f8e77284&s=${searchMovie}`
+        `https://www.omdbapi.com/?i=tt3896198&apikey=f8e77284&s=${searchMovie}`
       )
       .then((response) => {
         if (response.data.Error) {
