@@ -10,6 +10,11 @@
     text-align: center;
     font-size: 3rem;
 }
+.movieImage:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s ease-in-out;
+}
 
 .imgContainer{
     margin-top: 1rem;
@@ -60,6 +65,7 @@
 }
 .actors{
     margin-bottom: 2rem;
+    text-align: center;
 }
 .outer-ratingSites{
     width: 80%;

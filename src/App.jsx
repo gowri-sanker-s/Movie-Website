@@ -17,9 +17,20 @@ function App() {
         `http://www.omdbapi.com/?i=tt3896198&apikey=f8e77284&s=${searchMovie}`
       )
       .then((response) => {
-        setMovies(response.data.Search);
-        console.log(response.data.Search);
-      });
+        if (response.data.Error) {
+          setSearchMovie('')
+
+          throw new Error("Invalid Movie Name");
+
+        } else {
+          setMovies(response.data.Search);
+          console.log(response.data.Search);
+          }
+
+      })
+      .catch((error) =>{
+        alert(error.message  + ", Please re-enter Movie Name")
+      })
   };
   const movieDetails = (imdbID) => {
     navigate(`/movieDetails/${imdbID}`);

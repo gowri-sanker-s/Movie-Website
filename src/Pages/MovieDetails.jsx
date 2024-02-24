@@ -10,8 +10,16 @@ const MovieDetails = () => {
     axios
       .get(`http://www.omdbapi.com/?i=${imdbID.id}&apikey=f8e77284&plot=full`)
       .then((response) => {
-        setMovieDetails(response.data);
-        console.log(response.data);
+        if (response.data.Error) {
+          throw new Error("Invalid Movie Name");
+        } else {
+          setMovieDetails(response.data);
+          console.log(response.data);
+        }
+
+      })
+      .catch((error) => {
+        alert('Please Try Again'+ error.message)
       });
   }, [imdbID.id]);
   return (
