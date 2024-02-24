@@ -8,7 +8,7 @@ const MovieDetails = () => {
   const [movieDetails, setMovieDetails] = useState({});
   useEffect(() => { 
     axios
-      .get(`http://www.omdbapi.com/?i=${imdbID.id}&apikey=f8e77284&plot=full`)
+      .get(`https://www.omdbapi.com/?i=${imdbID.id}&apikey=f8e77284&plot=full`)
       .then((response) => {
         if (response.data.Error) {
           throw new Error("Invalid Movie Name");
